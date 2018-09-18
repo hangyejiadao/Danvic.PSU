@@ -28,12 +28,12 @@ namespace PSU.EFCore
             IdentityUser admin = new IdentityUser
             {
                 Name = "管理员姓名",
-                Account = "Administrator",
+                Account = "Admin",
                 AccountType = 0,
                 Age = 0,
                 Birthday = new DateTime(),
                 Salt = salt,
-                Password = MD5Utility.Sign("123456789", salt),
+                Password = MD5Utility.Sign("Admin", salt),
                 Gender = true,
                 IsEnabled = true,
                 Email = "administrator@jixia.com",
